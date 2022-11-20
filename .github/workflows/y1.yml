@@ -39,7 +39,7 @@ env:
 # 源码仓库:分支
   DEFAULT_SOURCE: coolsnowwolf/lede:master
 # 上传固件到 Github Releases
-  UPLOAD_RELEASES: true
+  UPLOAD_RELEASES: false
 # 上传固件到 Github Artifacts
   UPLOAD_ARTIFACTS: false
 # 上传 bin 文件夹到 Github Artifacts
