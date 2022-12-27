@@ -47,7 +47,7 @@ env:
 # 删除无用文件以增加编译空间
   DELETE_USELESS_FILES: true
 # 删除早期的 workflow 任务
-  DELETE_OLD_WORKFLOW: true
+  DELETE_OLD_WORKFLOW: false
 # Cache 加速编译
   CACHE_ACCELERATE: true
 ### 结束
@@ -166,7 +166,7 @@ jobs:
         rm -f .config && cp $GITHUB_WORKSPACE/Configs/$CONFIG_FILE .config
         Firmware_Diy_Main
         Firmware_Diy
-        Firmware_Diy_Other
+        # Firmware_Diy_Other
 
     - name: Pre-download Libraries
       run: |
